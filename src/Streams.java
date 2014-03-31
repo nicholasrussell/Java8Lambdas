@@ -126,7 +126,7 @@ public class Streams {
 
             // there is a small performance hit for going first
             // because of the way I am measuring these
-            
+
             // parallel stream
             startTime = System.nanoTime();
             unsortedp.parallelStream().sorted().filter(x -> x > 100).collect(Collectors.toList());
